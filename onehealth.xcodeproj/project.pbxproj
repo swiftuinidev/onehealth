@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03A1A43F2854E91A0077240B /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1A43E2854E91A0077240B /* CaloriesView.swift */; };
+		03A1A4412854E9450077240B /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1A4402854E9450077240B /* ProgressRingView.swift */; };
+		03A515632854F50B00CD5348 /* Calories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A515622854F50B00CD5348 /* Calories.swift */; };
+		03A51565285504D300CD5348 /* AuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A51564285504D300CD5348 /* AuthenticationResponse.swift */; };
 		03F0029F2854D9FE0042E044 /* onehealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0029E2854D9FE0042E044 /* onehealthApp.swift */; };
 		03F002A12854D9FE0042E044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F002A02854D9FE0042E044 /* ContentView.swift */; };
 		03F002A32854DA000042E044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F002A22854DA000042E044 /* Assets.xcassets */; };
 		03F002A62854DA000042E044 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F002A52854DA000042E044 /* Preview Assets.xcassets */; };
+		03F002AD2854DA5F0042E044 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F002AC2854DA5F0042E044 /* HealthManager.swift */; };
+		03F002B02854DA950042E044 /* Bmi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F002AF2854DA950042E044 /* Bmi.swift */; };
+		03F002B22854DAA40042E044 /* WebApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F002B12854DAA40042E044 /* WebApiManager.swift */; };
+		03F002B42854DABA0042E044 /* BMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F002B32854DABA0042E044 /* BMIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03A1A43E2854E91A0077240B /* CaloriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
+		03A1A4402854E9450077240B /* ProgressRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
+		03A515622854F50B00CD5348 /* Calories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calories.swift; sourceTree = "<group>"; };
+		03A51564285504D300CD5348 /* AuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
+		03A51566285506F900CD5348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		03F0029B2854D9FE0042E044 /* onehealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onehealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F0029E2854D9FE0042E044 /* onehealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onehealthApp.swift; sourceTree = "<group>"; };
 		03F002A02854D9FE0042E044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		03F002A22854DA000042E044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03F002A52854DA000042E044 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03F002AC2854DA5F0042E044 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		03F002AF2854DA950042E044 /* Bmi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bmi.swift; sourceTree = "<group>"; };
+		03F002B12854DAA40042E044 /* WebApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApiManager.swift; sourceTree = "<group>"; };
+		03F002B32854DABA0042E044 /* BMIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +49,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03A1A43D2854E3680077240B /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		03F002922854D9FE0042E044 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +75,18 @@
 		03F0029D2854D9FE0042E044 /* onehealth */ = {
 			isa = PBXGroup;
 			children = (
+				03A51566285506F900CD5348 /* Info.plist */,
+				03A1A43D2854E3680077240B /* images */,
+				03F002AE2854DA790042E044 /* models */,
 				03F0029E2854D9FE0042E044 /* onehealthApp.swift */,
 				03F002A02854D9FE0042E044 /* ContentView.swift */,
 				03F002A22854DA000042E044 /* Assets.xcassets */,
 				03F002A42854DA000042E044 /* Preview Content */,
+				03F002AC2854DA5F0042E044 /* HealthManager.swift */,
+				03F002B12854DAA40042E044 /* WebApiManager.swift */,
+				03F002B32854DABA0042E044 /* BMIView.swift */,
+				03A1A43E2854E91A0077240B /* CaloriesView.swift */,
+				03A1A4402854E9450077240B /* ProgressRingView.swift */,
 			);
 			path = onehealth;
 			sourceTree = "<group>";
@@ -65,6 +97,16 @@
 				03F002A52854DA000042E044 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03F002AE2854DA790042E044 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				03F002AF2854DA950042E044 /* Bmi.swift */,
+				03A515622854F50B00CD5348 /* Calories.swift */,
+				03A51564285504D300CD5348 /* AuthenticationResponse.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +136,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
@@ -137,8 +182,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F002B02854DA950042E044 /* Bmi.swift in Sources */,
+				03A515632854F50B00CD5348 /* Calories.swift in Sources */,
+				03A1A4412854E9450077240B /* ProgressRingView.swift in Sources */,
 				03F002A12854D9FE0042E044 /* ContentView.swift in Sources */,
+				03F002AD2854DA5F0042E044 /* HealthManager.swift in Sources */,
+				03F002B42854DABA0042E044 /* BMIView.swift in Sources */,
 				03F0029F2854D9FE0042E044 /* onehealthApp.swift in Sources */,
+				03F002B22854DAA40042E044 /* WebApiManager.swift in Sources */,
+				03A51565285504D300CD5348 /* AuthenticationResponse.swift in Sources */,
+				03A1A43F2854E91A0077240B /* CaloriesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +320,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"onehealth/Preview Content\"";
+				DEVELOPMENT_TEAM = W46G9JTX94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = onehealth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,8 +352,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"onehealth/Preview Content\"";
+				DEVELOPMENT_TEAM = W46G9JTX94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = onehealth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
