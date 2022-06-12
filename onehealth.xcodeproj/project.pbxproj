@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		038E3A2928569B0100794627 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 038E3A2828569B0100794627 /* SwiftKeychainWrapper */; };
 		03A1A43F2854E91A0077240B /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1A43E2854E91A0077240B /* CaloriesView.swift */; };
 		03A1A4412854E9450077240B /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1A4402854E9450077240B /* ProgressRingView.swift */; };
 		03A515632854F50B00CD5348 /* Calories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A515622854F50B00CD5348 /* Calories.swift */; };
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038E3A2928569B0100794627 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +130,9 @@
 			dependencies = (
 			);
 			name = onehealth;
+			packageProductDependencies = (
+				038E3A2828569B0100794627 /* SwiftKeychainWrapper */,
+			);
 			productName = onehealth;
 			productReference = 03F0029B2854D9FE0042E044 /* onehealth.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +164,9 @@
 				Base,
 			);
 			mainGroup = 03F002922854D9FE0042E044;
+			packageReferences = (
+				038E3A2728569B0100794627 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 03F0029C2854D9FE0042E044 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -402,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		038E3A2728569B0100794627 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		038E3A2828569B0100794627 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 038E3A2728569B0100794627 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 03F002932854D9FE0042E044 /* Project object */;
 }

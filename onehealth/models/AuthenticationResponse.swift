@@ -6,15 +6,9 @@
 //
 
 import Foundation
-class AuthenticationResponse: ObservableObject {
+struct AuthenticationResponse: Codable {
+    
+    var jwtToken: String
  
-@Published var jwtToken: String
-
-    
-    init(jwtToken: String) {
-        self.jwtToken = jwtToken
-    
-    }
-    
 }
 

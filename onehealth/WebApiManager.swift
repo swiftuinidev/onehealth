@@ -6,25 +6,30 @@
 //
 
 import Foundation
+import SwiftKeychainWrapper
+import UIKit
+
 let jwtAccessToken: String = ""
-let urlString = "http://api-hockeylab.com/login"
- 
-    func CallWebApi()
+let baseUrl = "http://api-hockeylab.com/"
+let apiSegment = "api"
+
+
+    func WebApiLogin()
 
     {
+        let endPoint = "/login"
         // create the url with URL
-        let url = URL(string: urlString)! // change server url accordingly
+        let url = URL(string: baseUrl + endPoint)! // change server url accordingly
         let parameters: [String: Any] = [ "username": "brandon@hockeylabmn.com",
                                           "password": "Fitness1!"]
 
         var request = URLRequest(url: url)
-        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpMethod = "Post"
+        request.httpMethod = "POST"
 
         
         do {
-         request.httpBody =  try 	JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
+         request.httpBody =  try 	JSONSerialization.data(withJSONObject: parameters)
         } catch let error {
             print(error.localizedDescription)
             return
@@ -48,8 +53,14 @@ let urlString = "http://api-hockeylab.com/login"
             // do whatever you want with the `data`, e.g.:
             
             do {
-                let responseObject = data
-                print(responseObject)
+                let decoder = JSONDecoder()
+                let responseObject =  try decoder.decode(AuthenticationResponse.self, from: data)
+                
+                let saveSuccessful: Bool? = KeychainWrapper.standard.set("jwtToken", forKey: responseObject.jwtToken)
+                 
+                
+                print("Is key chain saved",saveSuccessful)
+                
             } catch {
                 print(error) // parsing error
                 
@@ -64,3 +75,4 @@ let urlString = "http://api-hockeylab.com/login"
         task.resume()
         
     }
+ 

@@ -12,16 +12,35 @@ struct ContentView: View {
     @State var weight: String = ""
     @State var height: String = ""
     var body: some View {
-           ZStack{
+        
+        TabView{
+            
            
-                content
-           }
+                
+            Text("Login")
+            content
+                .tabItem{
+                    Label("TabOne" ,systemImage: "user")
+            }
+            Text("Tab 1")
+                .tabItem{
+                    Label("TabOne" ,systemImage: "star")
+            }
+            
+            Text("Tab 1")
+                .tabItem{
+                    Label("Tab 2 " ,systemImage: "star")
+            }
+            
+        }
+         
                
            
     }
     
     var content : some View
         {
+            
         VStack{
             
             
@@ -59,6 +78,24 @@ struct ContentView: View {
                                  .background(.thinMaterial)
                                  .cornerRadius(20)
                          }
+            
+            
+            
+              
+              
+            
+                 Button{
+                     WebApiLogin()
+                
+                 }label:{
+                                  Text("Login")
+                                      .font(.title)
+                                      .fontWeight(.bold)
+                                      .padding(.horizontal,24)
+                                      .padding(.vertical,8)
+                                      .background(.thinMaterial)
+                                      .cornerRadius(20)
+                              }
         }
     }
 }
