@@ -11,6 +11,7 @@
 		03A1A4412854E9450077240B /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1A4402854E9450077240B /* ProgressRingView.swift */; };
 		03A515632854F50B00CD5348 /* Calories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A515622854F50B00CD5348 /* Calories.swift */; };
 		03A51565285504D300CD5348 /* AuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A51564285504D300CD5348 /* AuthenticationResponse.swift */; };
+		03D745122856659600F6D1C9 /* CaloriesMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D745112856659600F6D1C9 /* CaloriesMainView.swift */; };
 		03F0029F2854D9FE0042E044 /* onehealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0029E2854D9FE0042E044 /* onehealthApp.swift */; };
 		03F002A12854D9FE0042E044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F002A02854D9FE0042E044 /* ContentView.swift */; };
 		03F002A32854DA000042E044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F002A22854DA000042E044 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		03A515622854F50B00CD5348 /* Calories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calories.swift; sourceTree = "<group>"; };
 		03A51564285504D300CD5348 /* AuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
 		03A51566285506F900CD5348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		03D745112856659600F6D1C9 /* CaloriesMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesMainView.swift; sourceTree = "<group>"; };
 		03F0029B2854D9FE0042E044 /* onehealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onehealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F0029E2854D9FE0042E044 /* onehealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onehealthApp.swift; sourceTree = "<group>"; };
 		03F002A02854D9FE0042E044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				03F002B32854DABA0042E044 /* BMIView.swift */,
 				03A1A43E2854E91A0077240B /* CaloriesView.swift */,
 				03A1A4402854E9450077240B /* ProgressRingView.swift */,
+				03D745112856659600F6D1C9 /* CaloriesMainView.swift */,
 			);
 			path = onehealth;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				03F002B02854DA950042E044 /* Bmi.swift in Sources */,
 				03A515632854F50B00CD5348 /* Calories.swift in Sources */,
 				03A1A4412854E9450077240B /* ProgressRingView.swift in Sources */,
+				03D745122856659600F6D1C9 /* CaloriesMainView.swift in Sources */,
 				03F002A12854D9FE0042E044 /* ContentView.swift in Sources */,
 				03F002AD2854DA5F0042E044 /* HealthManager.swift in Sources */,
 				03F002B42854DABA0042E044 /* BMIView.swift in Sources */,

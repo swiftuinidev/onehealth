@@ -9,40 +9,25 @@ import SwiftUI
 
 struct CaloriesView: View {
     var body: some View {
-        ZStack  {
-            ProgressRingView()
-        }
-        
-        ZStack{
- 
-            Label("Base Goals", systemImage: "folder.circle").font(.system(size: 30))
-        }
-        
-        HStack{
-            
-            Label("Daily Limit", systemImage: "flag.fill").font(.system(size: 30))
-            
-            Label("Food", systemImage: "fork.knife").font(.system(size: 30))
-        }
-        HStack{
-            Label("Exercise Taken", systemImage: "flag.fill").font(.system(size: 30))
-            
-            Button{
-                CallWebApi()
-                
-            }label:{
-                             Text("Login")
-                                 .font(.title)
-                                 .fontWeight(.bold)
-                                 .padding(.horizontal,24)
-                                 .padding(.vertical,8)
-                                 .background(.thinMaterial)
-                                 .cornerRadius(20)
-            }
-            
-        }
+        VStack(alignment: .center) {
+              VStack(alignment: .leading) {
+                  Text("Calories")
+                      .font(.system(.largeTitle))
+                      .foregroundColor(.white)
+                  Text("Remaining = Goal - Food + Exercise")
+                      .foregroundColor(.white)
+              }
+              
+              DataView()
+          }
+          .padding()
+          .background(Color.init(white: 0.05))
+          .cornerRadius(16)
+          .shadow(color: .black, radius: 5, x: 0, y: 0)
+      }
+     
     }
-}
+
 
 struct CaloriesView_Previews: PreviewProvider {
     static var previews: some View {
